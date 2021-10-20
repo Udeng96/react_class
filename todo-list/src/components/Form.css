@@ -1,0 +1,27 @@
+.form{
+  display:flex;
+}
+
+.form input{
+  flex: 1; /* 가로로 길게 */
+  font-size: 1.25rem;
+  outline: none;
+  border: none;
+  border-bottom : 1px solid black;
+}
+
+.create-button{
+  padding : .5rem 1rem;
+  margin-left: 1rem;
+  background: peachpuff;
+  border-radius: 10px;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+.create-button:hover{
+  background: crimson;
+}

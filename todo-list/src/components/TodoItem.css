@@ -1,0 +1,49 @@
+.todo-item{
+  padding: 1rem;
+  display:flex;
+  align-items: center;  /* 새로가운데 정렬 */
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+}
+
+
+/* todo-item에 마우스가 있을때만 remove 보이기 */
+.todo-item:hover{
+  background: peachpuff;
+}
+
+.todo-item:hover .remove{
+  opacity: 1;
+}
+
+.todo-item + .todo-item{
+  border-top: 1px solid orange;
+}
+
+
+/*remove버튼 평소에는 보이지 않게 */
+.remove{
+  margin-right: 1rem;
+  color: #e64980;
+  font-weight: 600;
+  opacity: 0;
+}
+
+.todo-text{
+  flex: 1;
+  word-break: break-all;
+}
+
+.checked{
+  text-decoration: line-through; /*체크가 되면 글자 중간에 라인이 생긴다.*/
+  color: black;
+}
+
+.check-mark{
+  font-size: 1.5rem;
+  line-height: 1rem;
+  margin-left: 1rem;
+  color: #3bc0db;
+  font-weight: 800;
+}
